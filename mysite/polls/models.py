@@ -14,7 +14,6 @@ class Poll(models.Model):
 		
 
 
-
 class Choice(models.Model):
 	poll = models.ForeignKey(Poll)
 	choice = models.CharField(max_length=200)
@@ -22,6 +21,3 @@ class Choice(models.Model):
 
 	def __unicode__(self):
 		return self.choice
-
-
-	
